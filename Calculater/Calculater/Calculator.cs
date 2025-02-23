@@ -28,27 +28,20 @@ namespace Calculater
             display.Text += clickBtn.Text;
         }
 
-        //抓數字A和運算子
+        //抓運算子
         private void Oper_Click(object sender, EventArgs e)
         {
-            // 將 sender 轉換為按鈕
-            Button clickOper = sender as Button;
-            
-            //避免0-6的情況
-            if (Sum == 0 && (display.Text != "0"))
-            {
-                Sum = int.Parse(display.Text);
-            }
-
+            Button clickOper = sender as Button;           
             display.Text += clickOper.Text;
             temp = Convert.ToChar(clickOper.Text);
         }
 
-        //抓數字B和輸出運算結果
+        //抓數字和輸出運算結果
         private void Sum_Click(object sender, EventArgs e)
         {
             //分割字串數字出來
             string[] parts = display.Text.Split(temp);
+            Sum = int.Parse(parts[0]);
             Num = int.Parse(parts[1]);
 
             switch (temp)
