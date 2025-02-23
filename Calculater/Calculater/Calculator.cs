@@ -56,7 +56,14 @@ namespace Calculater
                     Sum *= Num;
                     break;
                 case '/':
-                    Sum /= Num;
+                    if (Num == 0)
+                    {
+                        display.Text = "無法除以零，請按AC鍵歸零";
+                    }
+                    else
+                    {
+                        Sum /= Num;                   
+                    }
                     break;
                 case '%':
                     Sum %= Num;

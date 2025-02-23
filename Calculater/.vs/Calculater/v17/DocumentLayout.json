@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|d:\\git_workspace\\csharp_mvp_cal\\calculater\\calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|solutionrelative:calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|d:\\git_workspace\\csharp_mvp_cal\\calculater\\calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BFEF313C-50B4-4364-AC0F-97C04C11C442}|Calculater\\Calculater.csproj|solutionrelative:calculater\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -38,20 +38,19 @@
               "RelativeToolTip": "Calculater\\Calculator.Designer.cs",
               "ViewState": "AQIAAM0AAAAAAAAAAAAAAA4BAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T14:25:41.124Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T14:25:41.124Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Calculator.cs [\u8A2D\u8A08]",
+              "Title": "Calculator.cs [Design]",
               "DocumentMoniker": "D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\Calculater\\Calculator.cs",
               "RelativeDocumentMoniker": "Calculater\\Calculator.cs",
-              "ToolTip": "D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\Calculater\\Calculator.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "Calculater\\Calculator.cs [\u8A2D\u8A08]",
+              "ToolTip": "D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\Calculater\\Calculator.cs [Design]",
+              "RelativeToolTip": "Calculater\\Calculator.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T05:47:09.368Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "Calculater\\Calculator.cs",
               "ToolTip": "D:\\Git_WorkSpace\\CSharp_MVP_Cal\\Calculater\\Calculater\\Calculator.cs",
               "RelativeToolTip": "Calculater\\Calculator.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAkwCsAAAAjAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAowEAAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T11:55:41.65Z",
               "EditorCaption": ""
