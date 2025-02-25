@@ -25,9 +25,14 @@ namespace Calculater
         {           
             // 將 sender 轉換為按鈕
             Button clickBtn = sender as Button;
-            if(display.Text == "0")
+            char lastchar = display.Text.Last();
+            if (display.Text == "0")
             {
                 display.Text = clickBtn.Text;
+            }
+            else if((lastchar < 48 || lastchar > 57) && clickBtn.Text ==".")
+            {
+
             }
             else
             {
