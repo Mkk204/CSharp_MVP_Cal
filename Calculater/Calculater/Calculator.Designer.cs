@@ -239,7 +239,6 @@
             this.display.TabIndex = 16;
             this.display.Text = "0";
             this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.display.TextChanged += new System.EventHandler(this.display_TextChanged);
             // 
             // button17
             // 
@@ -311,7 +310,6 @@
             this.Controls.Add(this.button1);
             this.Name = "Calculator";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

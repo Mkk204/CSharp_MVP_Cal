@@ -32,7 +32,7 @@ namespace Calculater
             }
             else if((lastchar < 48 || lastchar > 57) && clickBtn.Text ==".")
             {
-
+                return;
             }
             else
             {
@@ -56,9 +56,9 @@ namespace Calculater
                        
             else if ((lastchar > 47 && lastchar < 58) && count ==2)
             {              
-                object mySender = "="; // 這裡可以放任何你想要的 sender
+                //object mySender = "="; // 這裡可以放任何你想要的 sender
                 EventArgs myEventArgs = new EventArgs(); // 如果不需要額外參數，就這樣傳                
-                Equal_Click(mySender, myEventArgs); // 手動觸發Equal_Click事件  
+                Equal_Click("=", myEventArgs); // 手動觸發Equal_Click事件  
             }
             //更改運算子
             else
@@ -142,38 +142,10 @@ namespace Calculater
         private void button17_Click(object sender, EventArgs e)
         {
             display.Text = "0";
-            histext.Text = "";
-            Sum = 0;
-            Num = 0;
-            count = 0;
-            temp2 = '\0';
-            this.display.Font = new System.Drawing.Font("新細明體", 37F);
+            histext.Clear();
+            Sum = Num = count = 0;
+            temp = temp2 = temp3 = '\0';
+            display.Font = new Font("新細明體", 37F);
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void display_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }
