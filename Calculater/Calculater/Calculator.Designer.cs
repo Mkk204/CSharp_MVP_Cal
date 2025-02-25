@@ -46,8 +46,9 @@
             this.button16 = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.TextBox();
             this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.histext = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -169,6 +170,7 @@
             this.button11.TabIndex = 10;
             this.button11.Text = ".";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.Number_Click);
             // 
             // button12
             // 
@@ -179,7 +181,7 @@
             this.button12.TabIndex = 11;
             this.button12.Text = "=";
             this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.Sum_Click);
+            this.button12.Click += new System.EventHandler(this.Equal_Click);
             // 
             // button13
             // 
@@ -232,32 +234,23 @@
             this.display.Location = new System.Drawing.Point(28, 9);
             this.display.Multiline = true;
             this.display.Name = "display";
-            this.display.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.display.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.display.Size = new System.Drawing.Size(316, 65);
             this.display.TabIndex = 16;
-            this.display.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.display.Text = "0";
+            this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.display.TextChanged += new System.EventHandler(this.display_TextChanged);
             // 
             // button17
             // 
             this.button17.Font = new System.Drawing.Font("新細明體", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.button17.Location = new System.Drawing.Point(22, 80);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(76, 67);
+            this.button17.Size = new System.Drawing.Size(158, 67);
             this.button17.TabIndex = 17;
             this.button17.Text = "AC";
             this.button17.UseVisualStyleBackColor = true;
             this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button18
-            // 
-            this.button18.Font = new System.Drawing.Font("新細明體", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button18.Location = new System.Drawing.Point(104, 80);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(76, 67);
-            this.button18.TabIndex = 18;
-            this.button18.Text = "+/-";
-            this.button18.UseVisualStyleBackColor = true;
-            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button19
             // 
@@ -270,13 +263,34 @@
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.Oper_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("新細明體", 29F);
+            this.label1.Location = new System.Drawing.Point(403, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 49);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "History";
+            // 
+            // histext
+            // 
+            this.histext.Font = new System.Drawing.Font("新細明體", 19F);
+            this.histext.Location = new System.Drawing.Point(365, 80);
+            this.histext.Multiline = true;
+            this.histext.Name = "histext";
+            this.histext.Size = new System.Drawing.Size(227, 358);
+            this.histext.TabIndex = 21;
+            this.histext.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 457);
+            this.ClientSize = new System.Drawing.Size(608, 450);
+            this.Controls.Add(this.histext);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button19);
-            this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
             this.Controls.Add(this.display);
             this.Controls.Add(this.button16);
@@ -323,8 +337,9 @@
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.TextBox display;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox histext;
     }
 }
 
