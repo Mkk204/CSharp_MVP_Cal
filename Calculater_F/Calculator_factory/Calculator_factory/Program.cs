@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Calculater
+namespace Calculator_factory
 {
     internal static class Program
     {
@@ -14,12 +14,9 @@ namespace Calculater
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Calculator());                    
+            Application.Run(new Form1());
         }
-
-
     }
 }
